@@ -1,0 +1,3 @@
+/home/ntasnim/cs102/simple-sudoku/ncurses/CMakeFiles/rebuild_cache.dir
+/home/ntasnim/cs102/simple-sudoku/ncurses/CMakeFiles/edit_cache.dir
+/home/ntasnim/cs102/simple-sudoku/ncurses/CMakeFiles/ncurses_test.dir
