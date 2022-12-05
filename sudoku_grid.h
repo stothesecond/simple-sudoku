@@ -2,6 +2,7 @@
 #define SUDOKU_GRID_H 1
 
 #include <vector>
+#include <cstddef>
 
 class SudokuGrid {
   std::vector<std::vector<int>> _grid;
