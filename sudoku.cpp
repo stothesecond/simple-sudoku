@@ -17,7 +17,6 @@ int main(int argc, char const *argv[]) {
   };
 
   SudokuGrid g = SudokuGrid(grid);
-
   std::cout << g.to_string();
 
   return 0;

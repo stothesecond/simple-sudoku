@@ -19,9 +19,9 @@ public:
 
   bool won();
 
-  void insert(int num, size_t row, size_t col);
+  int insert(int num, size_t row, size_t col);
 
-  void remove(size_t row, size_t col);
+  int remove(size_t row, size_t col);
 
   std::string to_string();
 };

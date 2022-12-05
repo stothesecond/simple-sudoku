@@ -8,7 +8,7 @@
 void SudokuGrid::refresh() {
   _incorrect_squares.clear();
   _empty_spots = 0;
-
+  
   for (int i = 0; i < 9; ++i) {
     for (int j = 0; j < 9; ++j) {
       if (_grid[i][j] == 0) {
@@ -31,51 +31,28 @@ bool SudokuGrid::won() {
   return (_incorrect_squares.size() == 0) && (_empty_spots == 0);
 }
 
-void SudokuGrid::insert(int num, size_t row, size_t col) {
+
+// returns 0 if successful and 1 if unsuccessful
+int SudokuGrid::insert(int num, size_t row, size_t col) {
   // ins [row] [col] [number]
-  //make sure you can't remove or insert that was there before you started
-  for (int i = 0; i < 9; ++i){
-      for (int j = 0; j < 9; ++j){
+  // make sure you can't remove or insert that was there before you started
 
-          insert_number = 1;
-          while(insert_number != 9){
-
-              int j = //someting %3;
-              if (j == 0){
-
-                  insert_number = false;
-                  while(!insert_number){
-
-
-                  }
-              }
-          }
-      }
+  if (_starting_grid[row - 1][col - 1] > 0) {
+    return;
   }
+
+  _grid[row - 1][col - 1] = num;
 }
 
-void SudokuGrid::remove(size_t row, size_t col) {
+
+// returns 0 if successful and 1 if unsuccessful
+int SudokuGrid::remove(size_t row, size_t col) {
   // rem [row] [col]
-  for (int i = 0; i < 9; ++i){
-      for (int j = 0; j < 9; ++j){
-
-          array[i][j] = i;
-          output << array[i][j] << " ";
-      }
-      output << endl;
+  if (_starting_grid[row - 1][col - 1] > 0) {
+    return;
   }
-  int num_to_remove = 1;
-  delete [] array[num_to_remove];
-  int // fill in this chunk
 
-  output << "Board after removing wrong answers: " << num_to_remove << '\n';
-  for (int i = 0; i < row; ++i){
-      for (int j = 0; j < column; ++j){
-          output << array[i][j] << " ";
-      }
-      output << endl;
-  }
-  return 0;
+  _grid[row - 1][col - 1] = 0;
 }
 
 std::string SudokuGrid::to_string() {
