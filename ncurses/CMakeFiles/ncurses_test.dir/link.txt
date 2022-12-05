@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/ncurses_test.dir/ncurses_test.cpp.o  -o ncurses_test  ./ncurses-6.2/install/lib/libncurses.a 
