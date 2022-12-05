@@ -32,11 +32,50 @@ bool SudokuGrid::won() {
 }
 
 void SudokuGrid::insert(int num, size_t row, size_t col) {
-  // ins [row] [col] [number] 
+  // ins [row] [col] [number]
+  //make sure you can't remove or insert that was there before you started
+  for (int i = 0; i < 9; ++i){
+      for (int j = 0; j < 9; ++j){
+
+          insert_number = 1;
+          while(insert_number != 9){
+
+              int j = //someting %3;
+              if (j == 0){
+
+                  insert_number = false;
+                  while(!insert_number){
+
+
+                  }
+              }
+          }
+      }
+  }
 }
 
 void SudokuGrid::remove(size_t row, size_t col) {
   // rem [row] [col]
+  for (int i = 0; i < 9; ++i){
+      for (int j = 0; j < 9; ++j){
+
+          array[i][j] = i;
+          output << array[i][j] << " ";
+      }
+      output << endl;
+  }
+  int num_to_remove = 1;
+  delete [] array[num_to_remove];
+  int // fill in this chunk
+
+  output << "Board after removing wrong answers: " << num_to_remove << '\n';
+  for (int i = 0; i < row; ++i){
+      for (int j = 0; j < column; ++j){
+          output << array[i][j] << " ";
+      }
+      output << endl;
+  }
+  return 0;
 }
 
 std::string SudokuGrid::to_string() {
