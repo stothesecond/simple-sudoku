@@ -1,8 +1,8 @@
-sudoku: main.o sudoku_grid.o
-	g++ -o sudoku main.o sudoku_grid.o
+sudoku: build/sudoku.o build/sudoku_grid.o
+	g++ -o sudoku build/sudoku.o build/sudoku_grid.o
 
-main.o: main.cpp sudoku_grid.h
-	g++ -c main.cpp sudoku_grid.h
+build/sudoku.o: sudoku.cpp sudoku_grid.h
+	g++ -o build/sudoku.o -c sudoku.cpp
 
-sudoku_grid.o: sudoku_grid.cpp sudoku_grid.h
-	g++ -c sudoku_grid.cpp sudoku_grid.h
+build/sudoku_grid.o: sudoku_grid.cpp sudoku_grid.h
+	g++ -o build/sudoku_grid.o -c sudoku_grid.cpp

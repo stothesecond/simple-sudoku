@@ -1,1 +1,4 @@
 ncurses/
+build/
+sudoku
+sudoku.exe
