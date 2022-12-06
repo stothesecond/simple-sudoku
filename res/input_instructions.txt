@@ -1,0 +1,9 @@
+INPUT EXAMPLE:
+  ins 3 4 5
+  rem 3 4
+  quit
+
+ACTIONS:
+	ins [row] [col] [num]    - Inserts a number (1 - 9) at the indicated space.
+	rem [row] [col]          - Removes a number (1 - 9) at the indicated space.
+	quit                     - Quit like a sore loser.

@@ -1,0 +1,6 @@
+
+Welcome to Sudoku with Stevie and Noshin!
+
+1: start
+2: how to play
+3: quit

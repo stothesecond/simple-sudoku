@@ -12,12 +12,18 @@ class SudokuGrid {
   std::vector<std::vector<int>> _incorrect_squares;
   size_t _empty_spots;
 
+  bool _quit;
+
   void refresh();
 
 public:
   SudokuGrid(std::vector<std::vector<int>> grid);
 
   bool won();
+
+  void quit();
+
+  bool didQuit();
 
   int insert(int num, size_t row, size_t col);
 

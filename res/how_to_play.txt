@@ -1,0 +1,32 @@
+HOW TO PLAY:
+  Sudoku is played on a grid of 9 x 9 spaces.
+  Within the rows and columns are 9 “squares” (made up of 3 x 3 spaces).
+  Each row, column and square (9 spaces each) needs to be filled out with the numbers 1-9,
+	  without repeating any numbers within the row, column or square.
+	You may not change any spaces that were pre-filled with a number.
+
+============== BOARD ===============
+
+9 || [ ][ ][ ]  [ ][ ][ ]  [ ][ ][ ]
+8 || [ ][ ][ ]  [ ][ ][ ]  [ ][3][ ]
+7 || [ ][2][ ]  [ ][ ][ ]  [ ][ ][ ] 
+
+6 || [ ][ ][ ]  [ ][ ][ ]  [ ][ ][ ]
+5 || [ ][ ][ ]  [ ][5][ ]  [ ][ ][ ]
+4 || [ ][ ][ ]  [ ][ ][ ]  [ ][ ][ ]
+
+3 || [ ][ ][ ]  [ ][ ][ ]  [ ][ ][ ]
+2 || [ ][ ][ ]  [ ][ ][ ]  [ ][7][ ]
+1 || [ ][ ][ ]  [ ][ ][ ]  [ ][ ][ ]
+     ===============================
+      1  2  3    4  5  6    7  8  9
+
+INPUT EXAMPLE:
+  3 4 ins 5
+  3 4 rem
+  quit
+
+ACTIONS:
+  [row] [col] ins [num]   - Inserts a number at the indicated space.
+  [row] [col] rem         - Removes a number at the indicated space.
+	quit                    - Quit like a sore loser.
